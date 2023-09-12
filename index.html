@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>CSSPositionTransformation</title>
 </head>
 <body>
@@ -13,38 +14,42 @@
 
     <header> 
 
-        <div class="logo">
-            <img id="logo" src="images/logo.png" alt="Productly logo">
-            <img id="logo-text" src="images/Productly.png" alt="Productly logo">
+        <div class="header__logo">
+            <img id="header__logo" src="images/img_logo_nav.png" alt="Productly logo">
         </div>
 
         <div> 
             <nav>
-                <ul>
+                <ul class="nav__list">
                     <li>Product</li>
                     <li>Costumer</li>
                     <li>Pricing</li>
                     <li>Resources</li>
-                </ul>
-                <button class="nav__button-signin">Sign in</button>
-                <button class="nav__button-signup">Sign up</button>
+                </ul>  
             </nav>
+        </div>
+        
+        <div class="nav__btn">
+            <button id="nav__btn-signin">Sign in</button>
+            <button id="nav__btn-signup">Sign up</button>
         </div>
 
     </header>
 
+
         <section class="section1">
-            <div class="section1__section">
+            <div class="section1_section">
                 <h1>The Design Thinking superpowers</h1>
-                <p class="section1__text"> Tools, tutorials, design and innovation experts, 
+                <p class="section1__section__text"> Tools, tutorials, design and innovation experts, 
                     all in one place! The most intuitive way to imagine your next user experience.</p>
-                <button class="section1__btn">Get started</button>
-                <img src="images/icon-play.png" alt="Icon play"><span>Watch the video</span>
+                <button id="section1__btn-getstarted">Get started</button>
+                <img id="icon-play" src="images/icon-play.png" alt="Icon play"><span class="icon-play-text">Watch the video</span>
 <!-- Not sure about the use of span here -->
             </div>
-            
+        </section>
+        <section>            
             <div class="section1__section">
-                <img src="images/img_section1.png" alt="colleagues jumping">
+                <img id="img_section1" src="images/img_section1.png" alt="colleagues jumping">
             </div>
         </section>
 
@@ -53,31 +58,31 @@
 
         <section class="section2">
             <div class="section2__section">
-                <h2>We design tools to unveil your superpowers</h2>
+                <h2 class="section2__h2">We design tools to unveil your superpowers</h2>
                     <div class="card">
                         <div class="card__card1">
                             <img src="images/icon-cursor.png" alt="Cursor icon">
-                            <h3>First click tests</h3>
-                            <p>While most people enjoy casino gambling.</p>
+                            <h3 class="card__h3">First click tests</h3>
+                            <p class="card__text">While most people enjoy casino gambling.</p>
                         </div>
                         <div class="card__card2">
                             <img src="images/icon-wave.png" alt="Wave icon">
-                            <h3>Design surveys</h3>
-                            <p>Sports betting, lottery and bingo playing for the fun.</p>
+                            <h3 class="card__h3">Design surveys</h3>
+                            <p class="card__text">Sports betting, lottery and bingo playing for the fun.</p>
                         </div>                    
                         <div class="card__card3">
                             <img src="images/icon-heart.png" alt="Heart icon">
-                            <h3>Preference tests</h3>
-                            <p>The Myspace page defines the individual.</p>
+                            <h3 class="card__h3">Preference tests</h3>
+                            <p class="card__text">The Myspace page defines the individual.</p>
                         </div>
                         <div class="card__card4">
                             <img src="images/icon-hourglass.png" alt="Hourglass icon">
-                            <h3>Five second tests</h3>
-                            <p>Personal choices and the overall personality of the person.</p>
+                            <h3 class="card__h3">Five second tests</h3>
+                            <p class="card__text">Personal choices and the overall personality of the person.</p>
                         </div>
                     </div> 
                 <div>
-                    <button class="section2__btn">SIGN UP NOW</button>
+                    <button id="section2__btn-signupnow">SIGN UP NOW</button>
                 </div>
             </div>
         </section>
@@ -86,12 +91,72 @@
 
 <!-------- THIRD SECTION OF WEBPAGE ------->
         <section class="section3">
-            <div class="section3__section">
+            <div class="section3__section-a">
 
-                <p>Effortless Validation for</p>
-                <h4>Design Professionals</h4>
-                <p>The Myspace page defines the individual, his or her characteristics, 
+                <p class="section3__text1">Effortless Validation for</p>
+                <h4 class="section3__h4">Design Professionals</h4>
+                <p class="section3__text2">The Myspace page defines the individual, his or her characteristics, 
                     traits, personal choices and the overall personality of the person.</p>
+
+                <h5 class="section3__h5">Accessory makers</h5>
+                <p class="section3__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
+
+                <h5 class="section3__h5">Alterationists</h5>
+                <p class="section3__text">If you are looking for a new way to promote your business that won’t cost you more money.</p>
+
+                <h5 class="section3__h5">Custom Design designers</h5>
+                <p class="section3__text">If you are looking for a new way to promote your business that won’t cost you more money.</p>
+           
+            </div>
+
+        </section>
+        <section>
+            
+            <div class="section3__section-b">
+                <img src="images/img_section3.png" alt="Person doing a presentation">
+            </div>
+
+        </section>
+
+
+
+<!-------- FOURTH SECTION OF WEBPAGE ------->
+    <section class="section4">
+        <section>
+            <div class="section4__section">
+                <img src="images/img_section4.png" alt="Person working on laptop">
+            </div>
+        </section>
+        <section>
+            <div class="section4__section">
+                <p class="section4__text1">Easier decision making for</p>
+                <h4 class="section4__h4">Product Managers</h4>
+
+                    <p class="section4__text2">The Myspace page defines the individual, his or her characteristics, traits,
+                       personal choices and the overall personality of the person.</p>
+            </div>
+            <div class="checklist">
+                <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">Never worry about overpaying for your energy again.</span>
+            </div>
+            <div>  
+                <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We will only switch you to energy companies that we trust and will treat you right.</span>
+            </div>
+            <div>    
+                <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We track the markets daily and know where the savings are.</span>
+            </div>
+        </section>
+    </section>
+        
+
+
+<!-------- FIFTH SECTION OF WEBPAGE ------->
+        <section class="section5">
+            <div class="section5__section">
+
+                <p>Optimisation for</p>
+                <h4>Marketers</h4>
+                <p>Few would argue that, despite the advancements of feminism over the past three decades, 
+                    women still face a double standard when it comes to their behavior.</p>
 
                 <h5>Accessory makers</h5>
                 <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
@@ -101,44 +166,50 @@
 
                 <h5>Custom Design designers</h5>
                 <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
-           
+        
             </div>
 
             <div class="section3__section">
-                <img src="images/img_section3.png" alt="Person doing a presentation">
+                <img src="images/img_section5.png" alt="Person organizing post-its">
             </div>
 
         </section>
 
 
 
-<!-------- FOURTH SECTION OF WEBPAGE ------->
-        <section class="section4">
+<!------------ FOOTER ------------->
 
-            <div class="section4__section">
-                <img src="images/img_section4.png" alt="Person working on laptop">
+        <hr>
+
+        <footer>
+            <div class="footer__logo">
+                <img id="footer__logo" src="images/img_logo_footer.png" alt="Productly logo">
+            </div> 
+
+            <div>
+                <ul>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                </ul>
             </div>
-            <div class="section4__section">
-                <p>Easier decision making for</p>
-                <h4>Product Managers</h4>
 
-                    <p>The Myspace page defines the individual, his or her characteristics, traits,
-                       personal choices and the overall personality of the person.</p>
+            <div>
+                <ul>
+                    <li>Disclaimer</li>
+                    <li>Financing</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+
+            <div id="signup-box">
             </div>
             <div>
-                <img src="images/icon-checklist.png" alt="Checklist icon"><span>Never worry about overpaying for your energy again.</span>
+                <button id="footer__btn-signup">Sign up</button>
             </div>
-            <div>  
-                <img src="images/icon-checklist.png" alt="Checklist icon"><span>We will only switch you to energy companies that we trust and will treat you right.</span>
-            </div>
-            <div>    
-                <img src="images/icon-checklist.png" alt="Checklist icon"><span>We track the markets daily and know where the savings are.</span>
-            </div>
-
-        </section>
-        
-
-<!-------- FIFTH SECTION OF WEBPAGE ------->
+        </footer>
 
 </body>
 </html>
