@@ -8,15 +8,30 @@ body {
 Or why isn't the elements using the whole screen? */
 }
 
-header {
-    display: flex;
-    position: relative;
-}
 
 
 /* ------- NAVIGATION --------- */
 
+header {
+    display: flex;
+    position: relative;
+    position: sticky;
+       
+}
+
+.header__logo {
+    position: absolute;
+    width: 185px;
+    height: 32px;
+    left: 144px;
+    margin-top: 45px;
+    margin-left: 1071px;
+    margin-bottom: 24px;
+    margin-left: 144px;
+}
+
 .nav__list {
+    position: absolute;
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
@@ -28,14 +43,14 @@ header {
     text-align: right;
     gap: 40px;
     list-style: none;
-    margin-right: 29px;
-}
-
-.nav__btn {
-    justify-content: flex-end;
+    margin-top: 44px;
+    margin-right: 400px;
+    margin-bottom: 26px;
+    margin-left: 650px;
 }
 
     #nav__btn-signin {
+        position: absolute;
         width: 102px;
         height: 46px;
         border: 1px;
@@ -47,10 +62,16 @@ header {
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0px;
-        color: rgba(23, 58, 86, 1)
+        color: rgba(23, 58, 86, 1);
+
+        margin-top: 35px;
+        margin-right: 269px;
+        margin-bottom: 17px;
+        margin-left: 1029px;
     }
 
     #nav__btn-signup {
+        position: absolute;
         width: 110px;
         height: 46px;
         border: 1px;
@@ -62,7 +83,12 @@ header {
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0px;
-        color: rgba(255, 255, 255, 1)
+        color: rgba(255, 255, 255, 1);
+
+        margin-top: 35px;
+        margin-right: 145px;
+        margin-bottom: 17px;
+        margin-left: 1145px;
     }
 
 
@@ -132,10 +158,16 @@ h1 {
     color: rgba(255, 153, 0, 1);
 }
 
-#img_section1 {
-    display: flex;
+.section1 {
+    position: relative;
+}
+
+.section1__section2 {
+    position:absolute
+    
 
 }
+
 
 
 /* -------- SECTION 2 ------ */
@@ -390,7 +422,7 @@ h1 {
 
 footer {
     position: relative;
-    padding-bottom: ;
+    padding-bottom: 100px;
 }
 
 #footer__logo {
@@ -399,12 +431,12 @@ footer {
     position: absolute;
 }
 
-.ul_1, .ul_2 {
+.footer__ul_1, .footer__ul_2 {
     flex-direction: row;
     position: absolute;
 }
 
-.ul_1 {
+.footer__ul_1 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -419,7 +451,7 @@ footer {
     list-style: none;
 }
 
-.ul_2 {
+.footer__ul_2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -434,7 +466,7 @@ footer {
     list-style: none;
 }
 
-#signup-box {
+#footer__signup-box {
     width: 325px;
     height: 48px;
     border: 1px;
