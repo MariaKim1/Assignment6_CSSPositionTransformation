@@ -13,40 +13,40 @@
 <!-------- FIRST SECTION OF WEBPAGE ------->
 
     <header> 
-
-        <div class="header__logo">
-            <img id="header__logo" src="images/img_logo_nav.png" alt="Productly logo">
-        </div>
-
-        <div> 
-            <nav>
-                <ul class="nav__list">
-                    <li>Product</li>
-                    <li>Costumer</li>
-                    <li>Pricing</li>
-                    <li>Resources</li>
-                </ul>  
-            </nav>
-        </div>
-        
-        <div class="nav__btn">
-            <button id="nav__btn-signin">Sign in</button>
-            <button id="nav__btn-signup">Sign up</button>
-        </div>
-
+        <div class="header">
+            <div>
+                <img class="header__logo" src="images/img_logo_nav.png" alt="Productly logo">
+            </div>
+            <div class="header__nav">
+                <nav>
+                    <ul class="header__nav__list">
+                        <li><a id="nav-product" href="pages/product" target="_blank">Product</a></li>
+                        <li><a id="nav-costumer" href="pages/costumer" target="_blank">Costumer</a></li>
+                        <li><a id="nav-pricing" href="pages/pricing" target="_blank">Pricing</a></li>
+                        <li><a id="nav-recources" href="pages/recources" target="_blank">Resources</a></li>
+                    </ul>  
+                </nav>
+                
+                <div class="header__nav__btn">
+                    <button class="header__nav__btn-signin">Sign in</button>
+                    <button class="header__nav__btn-signup">Sign up</button>
+                </div>
+            </div>
+        </div>    
     </header>
 
+    <main>
         <section class="section1">
-            <div class="section1_section">
-                <h1>The Design Thinking superpowers</h1>
-                <p class="section1__section__text"> Tools, tutorials, design and innovation experts, 
+            <div>
+                <h1 class="section1_h1">The Design Thinking superpowers</h1>
+                <p class="section1__text"> Tools, tutorials, design and innovation experts, 
                     all in one place! The most intuitive way to imagine your next user experience.</p>
-                <button id="section1__btn-getstarted">Get started</button>
-                <img id="icon-play" src="images/icon-play.png" alt="Icon play"><span class="icon-play-text">Watch the video</span>
+                <button class="section1__btn-getstarted">Get started</button>
+                <img class="icon-play" src="images/icon-play.png" alt="Icon play"><span class="icon-play-text">Watch the video</span>
 <!-- Not sure about the use of span here -->
             </div>
             <div class="section1__section2">            
-                <img id="img_section1" src="images/img_section1.png" alt="colleagues jumping">
+                <img class="section4 mainimg" src="images/img_section1.png" alt="colleagues jumping">
             </div>
         </section>
 
@@ -54,7 +54,7 @@
 <!-------- SECOND SECTION OF WEBPAGE ------->
 
         <section class="section2">
-            <div class="section2__section">
+            <div>
                 <h2 class="section2__h2">We design tools to unveil your superpowers</h2>
                     <div class="card">
                         <div class="card__card1">
@@ -78,9 +78,12 @@
                             <p class="card__text">Personal choices and the overall personality of the person.</p>
                         </div>
                     </div> 
-                <div>
-                    <button id="section2__btn-signupnow">SIGN UP NOW</button>
+                <div class="section2__btn__signupnow">
+                    <button class="section2__btn__signupnow">SIGN UP NOW</button>
                 </div>
+    <!-- QUESTION: I don't understand how this <div class="section2__btn__signupnow"> above is responding to the CSS.
+        Bcs when I put the same class-name on both div and button - the button centers on the page. Buut if I give them
+    two different class-names and change the CSS code accordingly, the buttonjumps to the left. What can I do to understand this? -->
             </div>
         </section>
       
@@ -88,8 +91,7 @@
 
 <!-------- THIRD SECTION OF WEBPAGE ------->
         <section class="section3">
-            <div class="section3__left">
-
+            <div>
                 <p class="section3__text1">Effortless Validation for</p>
                 <h4 class="section3__h4">Design Professionals</h4>
                 <p class="section3__text2">The Myspace page defines the individual, his or her characteristics, 
@@ -103,52 +105,49 @@
 
                 <h5 class="section3__h5">Custom Design designers</h5>
                 <p class="section3__text">If you are looking for a new way to promote your business that won’t cost you more money.</p>
-           
-            </div>
-            
-            <div class="section3__right">
-                <img src="images/img_section3.png" alt="Person doing a presentation">
             </div>
 
+            <div>            
+                <img class="section3 mainimg" src="images/img_section3.png" alt="Person doing a presentation">
+            </div>
         </section>
 
 
 
 <!-------- FOURTH SECTION OF WEBPAGE ------->
-    <section class="section4">
-            <div class="section4__mainimg">
-                <img src="images/img_section4.png" alt="Person working on laptop">
+        <section class="section4">
+            <div>
+                <img class="section4 mainimg" src="images/img_section4.png" alt="Person working on laptop">
             </div>
      
-            <div class="section4__section">
+            <div>
                 <p class="section4__text1">Easier decision making for</p>
                 <h4 class="section4__h4">Product Managers</h4>
 
-                    <p class="section4__text2">The Myspace page defines the individual, his or her characteristics, traits,
+                <p class="section4__text2">The Myspace page defines the individual, his or her characteristics, traits,
                        personal choices and the overall personality of the person.</p>
-            </div>
 
-            <div class="checklist"><div>
-                <div>
-                    <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">Never worry about overpaying for your energy again.</span>
-                </div>
-                
-                <div>  
-                    <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We will only switch you to energy companies that we trust and will treat you right.</span>
-                </div>
-                
-                <div>    
-                    <img src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We track the markets daily and know where the savings are.</span>
+                <div class="checklist">
+                    <div>
+                        <img class="checklist__icon" src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">Never worry about overpaying for your <br> energy again.</span>
+                    </div>
+                    
+                    <div>  
+                        <img class="checklist__icon" src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We will only switch you to energy companies <br>that we trust and will treat you right.</span>
+                    </div>
+                    
+                    <div>    
+                        <img class="checklist__icon" src="images/icon-checklist.png" alt="Checklist icon"><span class="checklist__text">We track the markets daily and know where the <br>savings are.</span>
+                    </div>
                 </div>
             </div>
-    </section>
+        </section>
         
 
 
 <!-------- FIFTH SECTION OF WEBPAGE ------->
         <section class="section5">
-            <div class="section5__section-left">
-
+            <div>
                 <p class="section5__text1">Optimisation for</p>
                 <h4 class="section5__h4">Marketers</h4>
                 <p class="section5__text2">Few would argue that, despite the advancements of feminism over the past three decades, 
@@ -165,45 +164,44 @@
         
             </div>
 
-            <div class="section5__section-right">
-                <img src="images/img_section5.png" alt="Person organizing post-its">
+            <div>
+                <img class="section5 mainimg" src="images/img_section5.png" alt="Person organizing post-its">
             </div>
-
         </section>
 
+    </main>
 
 
 <!------------ FOOTER ------------->
 
-        <hr>
-
         <footer>
-            <div class="footer__logo">
-                <img id="footer__logo" src="images/img_logo_footer.png" alt="Productly logo">
-            </div> 
+            <div class="footer">
+                <div>
+                    <img class="footer__logo" src="images/img_logo_footer.png" alt="Productly logo">
+                </div> 
 
-            <div>
-                <ul class="footer__ul_1">
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
+                <div>
+                    <ul class="footer__ul_1">
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
 
-            <div>
-                <ul class="footer__ul_2">
-                    <li>Disclaimer</li>
-                    <li>Financing</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                </ul>
-            </div>
+                <div>
+                    <ul class="footer__ul_2">
+                        <li>Disclaimer</li>
+                        <li>Financing</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
 
-            <div id="footer__signup-box">
-            </div>
-            <div>
-                <button id="footer__btn-signup">Sign up</button>
+                <div class="footer__signup">
+                   <div class="footer__signup__box"></div>
+                    <button class="footer__signup__btn">Sign up</button>
+                </div>
             </div>
         </footer>
 
