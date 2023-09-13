@@ -1,14 +1,16 @@
 body {
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 1);
     height: 100vh;
     width: 100%;
-/* do I need these screen-values? 
+   
+ /*   margin-left: 145px;*/
+ /* do I need these screen-values? 
 Or why isn't the elements using the whole screen? */
 }
 
 header {
     display: flex;
-  
+    position: relative;
 }
 
 
@@ -179,6 +181,7 @@ h1 {
     height: 78px;
     top: 46px;
 }
+/* 2 DO ==> titta på stylingen ovan! */
 
 #section2__btn-signupnow {
     width: 175px;
@@ -244,7 +247,9 @@ h1 {
     line-height: 26px;
     letter-spacing: 0px;
     text-align: left;
+    margin-top: 146px;
     margin-bottom: 5px;
+    margin-left: 145px;
 }
 
 .section3__text2 {
@@ -316,4 +321,148 @@ h1 {
 }
 
 
-/* -------- SECTION 5 ------ START HERE! */
+/* -------- SECTION 5 ------  */
+
+.section5__h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 385px;
+    height: 54px;
+    margin: 0px;
+    color: rgba(47, 40, 30, 1);
+}
+
+.section5__h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 211px;
+    height: 26px;
+    color: rgba(47, 40, 30, 1);
+}
+
+.section5__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 486px;
+    height: 52px;
+}
+
+.section5__text1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 146px;
+    margin-bottom: 5px;
+    margin-left: 145px;
+}
+
+.section5__text2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 486px;
+    height: 78px;
+    top: 103px;
+    margin-top: 22px;
+    margin-bottom: 30;
+}
+
+
+/* -------- FOOTER ------  */
+
+footer {
+    position: relative;
+    padding-bottom: ;
+}
+
+#footer__logo {
+    margin-top: 102px;
+    margin-left: 159px;
+    position: absolute;
+}
+
+.ul_1, .ul_2 {
+    flex-direction: row;
+    position: absolute;
+}
+
+.ul_1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 72px;
+    height: 140px;
+    margin-top: 167px;
+    margin-left: 484px;
+    color: rgba(84, 72, 55, 1);
+    list-style: none;
+}
+
+.ul_2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 132px;
+    height: 140px;
+    margin-top: 167px;
+    margin-left: 731px;
+    color: rgba(84, 72, 55, 1);
+    list-style: none;
+}
+
+#signup-box {
+    width: 325px;
+    height: 48px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(188, 208, 229, 1);
+    margin-top: 193px;
+    margin-right: 131px;
+    margin-bottom:149px;
+    margin-left: 944px;
+    position: absolute;
+}
+
+#footer__btn-signup {
+    width: 131px;
+    height: 39px;
+    background-color: rgba(255, 153, 0, 1);
+    border: none;
+    margin-top: 262px;
+    margin-right:325px;
+    margin-bottom: 89px;
+    margin-left: 944px;
+    position: absolute;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
