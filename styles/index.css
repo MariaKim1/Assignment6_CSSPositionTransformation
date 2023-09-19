@@ -1,9 +1,12 @@
 body {
     background-color: rgba(255, 255, 255, 1);
-    width: 1400px;
-    height: 100%;
-    margin-left: 145px;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 3843px;
+    margin: auto;
+
 }
+/* EDIT: Use max-width__, width: 100% + min-height. margin: auto; to center the screen.
 /* QUESTION: do I need to specify these body-values or not? 
 Seems like  are not using the whole screen? */
 
@@ -122,10 +125,12 @@ h1 {
     color: rgba(255, 255, 255, 1)
 }
 
-.icon-play {
+/* play - icon */
+.fa-solid { 
     width: 20px;
     height: 17px;
     margin-left: 17.5px;
+    color: rgba(255, 153, 0, 1);
 }
 
 .icon-play-text {
@@ -186,6 +191,12 @@ s there something blocking my CSS? */
     width: 240px;
     height: 78px;
     top: 46px;
+}
+
+/* EDIT: only give the <div> placment styles and the <button> design styles. */ 
+.section2__btnsection {
+    display: flex;
+    width: 100%;
 }
 
 .section2__btn__signupnow {
