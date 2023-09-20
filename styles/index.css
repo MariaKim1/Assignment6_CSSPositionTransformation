@@ -14,6 +14,12 @@ Seems like  are not using the whole screen? */
 /* -------- GENERAL STYLING SECTIONS ------ */
 
 section {
+    max-width: 1400px;
+    width: 100%;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 543px;
+    margin: auto;
     display: flex;
 }
 
@@ -150,6 +156,13 @@ h1 {
 
 /* ---------- SECTION 2 --------- */
 
+.section2 {
+    width:100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
 .section2__h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -157,16 +170,16 @@ h1 {
     line-height: 54px;
     letter-spacing: 0px;
     width: 539px;
-    text-align: center;
 }
-/* QUESTION: text-align w intention to center h2, but it doesn't.. */
+/* EDIT: as close as can be...
+QUESTION: text-align w intention to center h2, but it doesn't.. */
 
 .card {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    
 }
-/* QUESTION: .card styling w intention to get the "cards"/rows 
+/* EDIT: as close as can be...
+QUESTION: .card styling w intention to get the "cards"/rows 
 to spread out over the whole width...but they are not moving. 
 s there something blocking my CSS? */
 
